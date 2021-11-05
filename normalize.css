@@ -95,7 +95,86 @@ h1{
 }
 
 /* Search bar */
-#btn-search-mobile{
+form{
+    height: 30px;
+    display: flex;
+    margin-bottom: 20px;
+ }
+
+#map-marker{
+    width: 30px;
+    padding-top:5px;
+    text-align: center;
+    background-color: var(--primary-background);
+    border-radius: 8px 0 0 8px ;
+}
+
+#search-bar{
+    border: 3px solid var(--primary-background);
+    text-indent:25px;
+}
+
+ #search-btn{
+     width: 55px;
+    color:white;
+    background-color: var(--primary-blue);
+    text-align: center;
+    border-style: none;
+    border-radius: 0 8px 8px 0;
+ }
+
+ #search-btn:hover{
+    cursor: pointer;
+ }
+
+ #search-bar:hover{
+    border: 3px solid var(--primary-blue);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #btn-search-mobile{
     display: none;
 }
 
@@ -144,7 +223,7 @@ h1{
 
 #btn-search button:hover{
     cursor: pointer;
-}
+} */
 
 /* Filters */
 #filters{
