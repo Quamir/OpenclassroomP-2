@@ -45,10 +45,14 @@ body{
 header{
     width:1300px;
 }
-#logo{
+#logo , #logo-mobile{
     width: 94px;
     height: 44px;
     background: url("images/logo/Booki.png")no-repeat center center/cover;
+}
+
+#logo-mobile{
+    display: none;
 }
 
 #active_page_line{
@@ -114,7 +118,7 @@ h1{
 
 .fa-map-marker-alt{
     position: relative;
-    top:5px;
+    top:8px;
 }
 
 #search-bar :nth-child(2) {
@@ -177,7 +181,7 @@ h1{
 }
 
 #mobile-filters{
-    display: ;
+    display: none;
 }
 
 #filters p{

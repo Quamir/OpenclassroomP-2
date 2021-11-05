@@ -36,6 +36,14 @@
         margin: unset;
         }
 
+    #logo{
+        display: none;
+    }
+
+    #logo-mobile{
+        display: unset;
+    }
+
     #search-bar{
         width: 300px;
         margin-left: -50px;
