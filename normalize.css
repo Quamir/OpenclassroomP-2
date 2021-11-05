@@ -93,6 +93,10 @@ h1{
 }
 
 /* Search bar */
+#btn-search-mobile{
+    display: none;
+}
+
 #search-bar{
   display: flex;
   flex-direction: row;
@@ -111,7 +115,6 @@ h1{
 .fa-map-marker-alt{
     position: relative;
     top:5px;
-    
 }
 
 #search-bar :nth-child(2) {
@@ -174,7 +177,7 @@ h1{
 }
 
 #mobile-filters{
-    display: none;
+    display: ;
 }
 
 #filters p{
@@ -451,7 +454,7 @@ h1{
     padding-top: 20px;
 }
 
-/* #activity_frame_1{
+#activity_frame_1{
     width: 300px;
     height: 380px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
@@ -600,7 +603,7 @@ h1{
     height: 90px;
     border-radius: 15px 15px 0 0;
     background: url(./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat center center / cover;
-} */
+}
 
 /* Footer  */
 footer{
