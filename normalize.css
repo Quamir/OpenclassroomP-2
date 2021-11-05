@@ -182,13 +182,13 @@ form{
 .circle i {
     width: inherit;
     color: var(--primary-blue);
-    padding-left:10px
-    
+    padding-left:10px;
 }
 
 /* End of Header CSS */
 
 /* First Showcase CSS */
+/* Accommodations */
 
 #grey-star{
     color: #d9d9d9 ;
@@ -205,15 +205,13 @@ form{
     height: 550px;
     border-radius: 15px;
     padding-top: 35px;
-    margin: auto;
     float: left;
     background-color:var(--primary-background);
     
 }
 
 #accommodations h2{
-    padding-left: 50px;
-    margin:auto;
+    text-indent: 50px;
 }
 
 #grid-container{
@@ -231,21 +229,27 @@ form{
     height: 190px;
     border-radius: 15px;
     background-color: var(--card-background-color);
+   
+}
+
+.pic{
+   padding-left: px;
+   width: 230px;
+   height: 105px;
+   border-radius: 15px 15px 0 0;
 }
 
 .picture-frame div{
     width: 230px;
     height: 110px;
-    border-radius: 15px 15px 0 0;
-    margin-top: 6px;
-    margin-left: 6px;
+    padding-top: 6px;
+    padding-left: 6px;
+    background-size: 100%;
 }
 
 .picture-frame p{
-    position: relative;
-    top: 5px;
-    left: 25px;
-    padding-top: 5px;
+    text-indent: 20px;
+    padding-top: 10px;
     font-weight: bold;
     
 }
@@ -276,32 +280,6 @@ form{
     padding-top: 30px;
     padding-left: 50px;
     font-weight: bold;
-}
-
-/* Inserting images */
-#grid-container :nth-child(1) div{
-    background: url(./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) no-repeat center center/cover;
-    background-position-y: -25px;
-}
-
-#grid-container :nth-child(2) div{
-    background: url(./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) no-repeat center center/cover;
-}
-
-#grid-container :nth-child(3) div{
-    background: url(./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) no-repeat center center/cover;
-}
-
-#grid-container :nth-child(4) div{
-    background: url(./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) no-repeat center center/cover;
-}
-
-#grid-container :nth-child(5) div{
-    background: url(./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) no-repeat center center/cover;
-}
-
-#grid-container :nth-child(6) div{
-    background: url(./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat center center/cover;
 }
 
 /*Most Popular */
