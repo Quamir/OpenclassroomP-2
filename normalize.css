@@ -6,7 +6,6 @@
 --primary-background:#F2F2F2;
 --card-background-color:#ffffff;   
 }
-
 /* General sizing properties */
 *{
     box-sizing: border-box;
@@ -93,7 +92,7 @@ h1{
     font-size: 24px;
     padding-bottom: 7px;
 }
-
+/* End of Header */
 /* Search bar */
 form{
     height: 30px;
@@ -130,101 +129,7 @@ form{
  #search-bar:hover{
     border: 3px solid var(--primary-blue);
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #btn-search-mobile{
-    display: none;
-}
-
-#search-bar{
-  display: flex;
-  flex-direction: row;
-  width: 375px;
-  margin-bottom: 20px;
-}
-
-#map-marker{
-    width: 40px;
-    height: 35px;
-    text-align: center;
-    background-color: var(--primary-background);
-    border-radius: 8px 0 0 8px ;
-}
-
-.fa-map-marker-alt{
-    position: relative;
-    top:8px;
-}
-
-#search-bar :nth-child(2) {
-    flex-grow: 1;
-    border: 2px solid var(--primary-background);
-    text-indent:25px
-}
-
-#btn-search{
-    width:70px;
-    color:white;
-    background-color: var(--primary-blue);
-    text-align: center;
-    border-radius: 0 8px 8px 0;
-}
-
-#btn-search button{
-    color: white;
-    background-color: var(--primary-blue);
-    border: none;
-    position: relative;
-    top: 7px;
-    font-size: 16px;
-}
-
-#btn-search button:hover{
-    cursor: pointer;
-} */
-
+/* End of Search  */
 /* Filters */
 #filters{
     display: flex;
@@ -243,14 +148,10 @@ form{
     padding-right: 10px;
 }
 
-#city{
-    position: relative;
-    left: 25px;
-}
-
 .filter-box{
-    width: 168px;
-    height:34px;
+    display: flex;
+    flex-direction: row;
+    
     border: 3px solid #F2F2F2;
     border-radius: 19px;
     text-align: center;
@@ -262,47 +163,28 @@ form{
 }
 
 #filters p{
-    position: relative;
-    top:5px;
+    padding-top: 7px;
     padding-left: 10px;
+    padding-right: 13px;
+    padding-bottom: 10px
 }
 
 .circle{
     position: relative;
-    top: -20px;
-    left: -3px;
-    height: 32px;
-    width: 36px;
-    padding-top: 7px;
-    padding-right: 2px;
+    left: -5px;
+    float: left;
+    padding-right: 10px;
+    padding-top: 5px;
     border-radius: 15px;
     background-color: var(--secondary-blue);
 }
 
 .circle i {
+    width: inherit;
     color: var(--primary-blue);
+    padding-left:10px
     
 }
-
-#filters :nth-child(2).filter-box{
-   width: 150px;
-}
-
-#filters :nth-child(3).filter-box{
-    width: 200px;
- }
-
- #filters :nth-child(4).filter-box{
-    width: 140px;
- }
-
- #filters :nth-child(5).filter-box{
-    width: 190px;
- }
-
- .filter-box:hover{
-    background-color: var(--primary-blue);
- }
 
 /* End of Header CSS */
 
