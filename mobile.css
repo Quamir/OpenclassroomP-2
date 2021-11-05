@@ -1,0 +1,153 @@
+@media (max-width: 767px){
+
+    body{
+        width:500px;
+    }
+    
+    h2{
+     font-size: 18px;  
+     
+    }
+
+    .menu{
+     position: relative;
+     left:-20px;
+     top: 15px;
+    
+    }
+
+    #active_page_line{
+        display: none;
+    }
+
+    .menu{
+        
+    }
+
+    #search-bar{
+        width: 300px;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-left: 60px;
+        align-items: center;
+    }
+    h1{
+        align-items: center;
+        padding-top: 5px;
+        font-size: 20px;
+    }
+    
+    #filters{
+        width:380px;
+        flex-wrap: wrap;
+        
+    }
+
+    p#info{
+        padding-top: 70px;
+    }
+
+    #filter-title{
+        display: none;
+    }
+
+    #mobile-filters{
+        display: inline;
+        position: relative;
+        left: -140px;
+    }
+
+    #most-popular{
+        border-radius: unset;
+    }
+
+    .frist-showcase{
+        width: 300px;
+        height: 2000px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    #accommodations{
+        margin-top: unset;
+        width: 300px;
+        height: 1200px;
+        background-color: transparent;
+    }
+
+    #accommodations h2{
+    }
+
+    #grid-container{
+        width: 400px;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 35px;
+    }
+
+    .picture-frame{
+        width: 300px;
+        height: 190px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+    }
+
+    .picture-frame div{
+        width: 290px;
+        height: 110px;
+    }
+
+    #activities{
+        width: 300px;
+        height: 1200px;
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+
+    #activities_grid_container{
+        height: 1150px;
+        display: flex;
+        flex-direction: column;  
+        justify-content: space-evenly;  
+    }
+
+    .activity_frame{
+        width: 300px;
+        height: 164px;
+        background-color: white;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 15px;
+    }
+
+    .activity_frame div{
+        width: 300px;
+        height: 110px;
+        background-color:red;
+        border-radius: 15px 15px 0 0;
+
+    }
+    
+    footer{
+        height: 400px;
+    }
+    #footer_flex_container{
+        flex-direction: column;
+        margin-left:25px;
+    }
+
+    #footer_flex_container div{
+        padding-bottom: 20px;
+    }
+
+    #footer_flex_container div h3{ 
+        padding-bottom: 15px;
+    }
+    
+    
+    
+}

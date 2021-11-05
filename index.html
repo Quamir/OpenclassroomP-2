@@ -9,18 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>BOOKI</title>
 </head>
 <body>
     <header>
+        <div id="logo"></div>
         <div class="menu">
             <div id="active_page_line"></div>
             <ul>
-                <li id="active_page_blue"><a href="#">Accommodations</a></li>
-                <li><a href="#">Activities</a></li>
+                <li id="active_page_blue"><a href="#accommodations">Accommodations</a></li>
+                <li><a href="#activities">Activities</a></li>
             </ul>
         </div>
-        <div id="logo"></div>
         <div class= "title">
         <h1>Find a place for your dream vaction</h1>
         <p>Downtown or in nature</p>
@@ -30,6 +31,7 @@
             <input type="search" type="text" placeholder="Marseille, France">
             <div id="btn-search"><button type="button">Search</button></div>
         </div>
+            <p id="mobile-filters">Filters</p>
             <div id="filters">
                 <div id="filter-title"> 
                     <p>Filters</p>
@@ -51,12 +53,12 @@
                     <div class="circle"><i class="fas fa-dog"></i></div>
                 </div>
             </div>
-             <p id="info"><i class="fas fa-info-circle"></i>More than 500 accommodations are available in this</p>
-              <p id="city">city</p>  
+             <p id="info"><i class="fas fa-info-circle"></i>More than 500 accommodations are available in this city</p>
+            
     </header>
     <section class="frist-showcase"> 
         <div id="accommodations">
-            <h2><a href="#">Accommodations</a> in Marseille</h2>
+            <h2>Accommodations in Marseille</h2>
             <div id="grid-container">
                 <div class="picture-frame">
                     <a href="#"><div></div></a>
@@ -177,29 +179,29 @@
         </div>
     </section>
     <section id=activities>
-        <h2><a href="#">Activities</a> in Marseille</h2>
-        <div id="activities_grid_container">
-            <div id="activity_frame_1">
+        <h2>Activities in Marseille</h2>
+        <div id="activities_grid_container" >
+            <div id="activity_frame_1" class="activity_frame">
                 <a href="#"><div></div></a>
                 <p><a href="#">Old Port</a></p>
             </div>
-            <div id="activity_frame_2">
+            <div id="activity_frame_2" class="activity_frame">
                 <a href="#"><div></div></a>
                 <p><a href="#">Pomègues Fort</a></p>
             </div>
-            <div id="activity_frame_3">
+            <div id="activity_frame_3" class="activity_frame">
                 <a href="#"><div></div></a>
                 <p><a href="#">Frioul Island</a></p>
             </div>
-            <div id="activity_frame_4">
+            <div id="activity_frame_4" class="activity_frame">
                 <a href="#"><div></div></a>
                 <p><a href="#">Calanques National Park</a></p>
             </div>
-            <div id="activity_frame_5">
+            <div id="activity_frame_5" class="activity_frame">
                 <a href="#"><div></div></a>
                 <p><a href="#">Notre-Dame-de-la-Garde</a></p>
             </div>
-            <div id="activity_frame_6">
+            <div id="activity_frame_6" class="activity_frame">
                 <a href="#"><div></div></a>
                 <p><a href="#">Longchamp Park</a></p>
             </div>
