@@ -45,45 +45,43 @@ body{
 header{
     width:1300px;
 }
+
+#logo-mobile{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
 #logo , #logo-mobile{
     width: 94px;
     height: 44px;
     background: url("images/logo/Booki.png")no-repeat center center/cover;
 }
 
-#logo-mobile{
-    display: none;
-}
-
-#active_page_line{
-    position: relative;
-    width: 135px;
-    height: 1.6px;
-    top: -10px;
-    left: -5px;
-    background-color: var(--primary-blue);
-    margin: unset;
-}
-
-#active_page_blue{
-    color: var(--primary-blue);
-}
-
-.menu{
-    position: relative;
-    width:250px;
-    top:20px;
-    left: 1000px;
-    margin: 0;
-}
-
 .menu ul{
-    box-sizing: content-box;
     display: flex;
     justify-content: space-between;
     width: 250px;
-    margin: unset;
-    padding: unset;
+}
+
+.menu ul :nth-child(2){
+   flex-grow: 1;
+   text-indent: 30px;
+}
+
+#blue-border{
+     border-top:  3px solid transparent;
+}
+
+#blue-border:hover{
+    border-top:  3px solid var(--primary-blue);
+}
+
+#grey-border{
+    border-top:  3px solid transparent;
 }
 
 .title{

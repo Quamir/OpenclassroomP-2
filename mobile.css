@@ -16,25 +16,19 @@
     
     }
 
-    #active_page_line{
-        position: relative;
-        width: 400px;
-        height: 1.6px;
-        top:  30px;
-        left: -70px;
-        background-color: var(--primary-background);
-        margin: unset;
+    #blue-border{
+        border-top: unset;
+        border-bottom:  3px solid var(--primary-blue);
+        padding: auto;
     }
 
-    #active_page_line_2{
-        position: relative;
-        width: 220px;
-        height: 1.6px;
-        top:  28px;
-        left: -70px;
-        background-color: var(--primary-blue);
-        margin: unset;
-        }
+    #blue-border:hover{
+        border-top: unset;
+    }
+
+    #grey-border{
+        border-bottom:  3px solid var(--primary-background);
+    }
 
     #logo{
         display: none;
