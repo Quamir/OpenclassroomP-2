@@ -207,7 +207,6 @@ form{
     padding-top: 35px;
     float: left;
     background-color:var(--primary-background);
-    
 }
 
 #accommodations h2{
@@ -364,46 +363,11 @@ form{
     font-weight: bolder;
 }
 
-
-
 .most-pop-pic{
     width:120px;
     height:112px;
     border-radius: 15px 0 0 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Activities in Marseille */
 #activities{
@@ -420,7 +384,7 @@ form{
 }
 
 #activity_frame_1{
-    width: 300px;
+    width: 270px;
     height: 380px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
     border-radius: 15px;
@@ -429,11 +393,10 @@ form{
     background-color: var(--card-background-color);
 }
 
-#activity_frame_1 div{
-    width: 300px;
+#activity-pic-1{
+    width: 270px;
     height: 325px;
     border-radius: 15px 15px 0 0;
-    background: url(./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat center center / cover;
 }
 
 #activity_frame_1 p{
@@ -460,11 +423,10 @@ form{
     font-weight: bold;
 }
 
-#activity_frame_2 div{
+#activity-pic-2{
     width: 261px;
     height: 164px;
     border-radius: 15px 15px 0 0;
-    background: url(./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat center center / cover;
 }
 
 #activity_frame_3{
@@ -487,15 +449,14 @@ form{
     font-weight: bold;
 }
 
-#activity_frame_3 div{
+#activity-pic-3{
     width: 261px;
     height: 90px;
     border-radius: 15px 15px 0 0;
-    background: url(./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) no-repeat center center / cover;
 }
 
 #activity_frame_4{
-    width: 300px;
+    width: 270px;
     height: 380px;
     border-radius: 15px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
@@ -512,16 +473,15 @@ form{
     font-weight: bold;
 }
 
-#activity_frame_4 div{
-    width: 300px;
+#activity-pic-4{
+    width: 270px;
     height: 325px;
     border-radius: 15px 15px 0 0;
-    background: url(./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat center center / cover;
 }
 
 #activity_frame_5{
     width: 312px;
-    height: 211px;
+    height: 170px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
     border-radius: 15px;
     background-color: sienna;
@@ -537,22 +497,21 @@ form{
     font-weight: bold;
 }
 
-#activity_frame_5 div{
+#activity-pic-5{
     width:312px;
-    height: 164px;
+    height: 125px;
     border-radius: 15px 15px 0 0;
-    background: url(./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat center center / cover;
 }
 
 #activity_frame_6{
     width: 312px;
-    height: 132px;
+    height: 160px;
     border-radius: 15px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
     grid-column: 4;
     grid-row: 1;
     position: relative;
-    top: 250px;
+    top: 220px;
     background-color: var(--card-background-color);
 }
 
@@ -563,11 +522,10 @@ form{
     font-weight: bold;
 }
 
-#activity_frame_6 div{
+#activity-pic-6{
     width: 312px;
-    height: 90px;
+    height: 120px;
     border-radius: 15px 15px 0 0;
-    background: url(./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat center center / cover;
 }
 
 /* Footer  */
