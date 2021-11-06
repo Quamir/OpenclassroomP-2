@@ -305,81 +305,105 @@ form{
     padding-left: 44px;
 }
 
+#most-popular-grid-container{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .popular-frame{
     width:310px;
     height:125px;
+    margin-left: 30px;
     border-radius: 15px;
     background-color: var(--card-background-color);
+    display: flex;
 }
-
-.popular-frame div{
-    width:120px;
-    height:112px;
-    position: relative;
-    top: 7px;
-    left: 7px;
-    border-radius: 15px 0 0 15px;
-}
-
-.popular-frame p{
-    position: relative;
-    height: 20px;
-    width:170px;
-    top: -100px;
-    left: 140px;
-    font-weight: bold;
-    font-size: 14px;
-    margin: 0;
-}
-
-.popular-frame p:nth-of-type(2){
-    font-size: 12px;
-    text-decoration: none;
-    padding-top: 35px;
+.popular-frame img{
+    height: 120px;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 .popular-frame ul{
     display: flex;
-    flex-direction: row;
-    position: relative;
-    padding-left: 0;
-    margin-right: 5px;
-    width: 100px;
-    top: -65px;
-    left: 140px;
-    font-size: 12px;  
+    font-size: 12px;
     color: var(--primary-blue);
 }
-/* Unquine styling for child one */
-/* The <br> in the 2nd and 3rd childern makes the first child need a unquie positiong for its card */
-#most-popular-grid-container :nth-child(1) ul{
-    top: -50px;
-    left: 140px;
+
+.grey-star{
+    color: #d9d9d9;
 }
 
-#most-popular-grid-container :nth-child(1) p:nth-of-type(2) {
-    padding-top: 20px;
+#most-popular-grid-container :first-child .frame-flex p:nth-of-type(2){
+    padding-top: 25px;
+   padding-bottom:25px;
 }
 
-#most-popular-grid-container{
-    display: grid;
-    grid-template-columns: auto atuo;
-    grid-gap: 35px;
-    justify-content: center;
-    padding-top: 20px;
+.frame-flex{
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#most-popular-grid-container :nth-child(1) div{
-        background: url(./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat center center / cover;
+.frame-flex :first-child{
+    font-weight: bolder;
+    text-overflow: wrap;
 }
 
-#most-popular-grid-container :nth-child(2) div{
-    background: url(./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) no-repeat center center / cover;
+.frame-flex :nth-child(2){
+    font-size: 12px;
+    padding-bottom: 30px;
 }
 
-#most-popular-grid-container :nth-child(3) div{
-    background: url(./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) no-repeat center center / cover;
+.frame-flex :nth-child(2) i{
+    font-weight: bolder;
 }
+
+
+
+.most-pop-pic{
+    width:120px;
+    height:112px;
+    border-radius: 15px 0 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Activities in Marseille */
 #activities{
