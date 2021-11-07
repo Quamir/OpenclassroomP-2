@@ -1,5 +1,6 @@
 @media (max-width: 767px){
 
+    /* General */
     body{
         width:500px;
     }
@@ -8,22 +9,12 @@
         font-size: 18px;  
      
     }
-
+    /* MENU */
     .menu{
         position: relative;
         left:-20px;
         top: 15px;
     
-    }
-
-    #blue-border{
-        border-top: unset;
-        border-bottom:  3px solid var(--primary-blue);
-        padding: auto;
-    }
-
-    #blue-border:hover{
-        border-top: unset;
     }
 
     #grey-border{
@@ -38,8 +29,45 @@
         display: unset;
     }
 
+    .blue-border{
+        border-top: unset;
+        border-bottom:  3px solid var(--primary-blue);
+        padding: auto;
+    }
 
+    .blue-border:hover{
+        border-top: unset;
+    }
+    /* SEARCH */
+    #mobile-search-btn{
+        display: unset;
+        width:40px;
+        border-radius: 8px 8px 8px 8px;
+    }
 
+    #search-btn{
+        display: none;
+    }
+
+    #magnifying-glass{
+        display: unset;
+    }
+
+    #magnifying-glass input{
+        width: 40px;
+        height: 30px;
+        border-radius: 8px 8px 8px 8px;
+        border:unset;
+        background-color: var(--primary-blue);
+        color: var(--primary-blue);
+    }
+    form div:nth-of-type(2) i{
+        position: relative;
+        left:-32px;
+        color: white;
+        background-color: var(--primary-blue);
+    }
+    /* HEADER */
     header{
         display: flex;
         flex-direction: column;
@@ -52,7 +80,7 @@
         padding-top: 5px;
         font-size: 20px;
     }
-    
+    /* FILTERS */
     #filters{
         width:380px;
         flex-wrap: wrap;
@@ -71,34 +99,48 @@
         position: relative;
         left: -140px;
     }
-
+    /* MOST POPULAR */
     #most-popular{
+        width:375px;
+        height: 500px;
         border-radius: unset;
-        height: 570px;
     }
 
+    #most-popular-grid-container{
+       height: 400px;
+    }
+
+    /* FRIST SHOWCASE */
     .frist-showcase{
-        width: 300px;
-        height: 2000px;
+        width: 375px;
+        height: 1700px;
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 20px;
         margin-left: 0;
     }
 
     #accommodations{
         margin-top: unset;
-        width: 300px;
+        width: 375px;
         height: 1200px;
         background-color: transparent;
     }
 
-    #grid-container{
-        width: 400px;
-        height: 1300px;
-        display: flex;
+    #accommodations h2{
+        text-indent: 50px;
+    }
+
+    .flex-grid{
+        width: 375px;
+        height: 1215px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .col{
+        width: 300px;
+        height: 600px;
         flex-direction: column;
-        margin-left: 35px;
+        align-items: center;
     }
 
     .picture-frame{
@@ -107,81 +149,56 @@
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
     }
 
-    .picture-frame div{
-        width: 290px;
-        height: 110px;
+    .picture-frame div img.pic{
+        width: 289px;
+        height: 100px;
+        padding-left: -5px;
     }
-
+    /* ACTIVITIES */
     #activities{
         width: 300px;
-        height: 1200px;
-        margin-top: 20px;
+        height: 1260px;
+        margin-top: 160px;
         margin-left: 35px;
     }
 
-    #activities_grid_container{
-        width: 400px;
+    .activities-flex-grid-container{
         height: 1150px;
-        display: flex;
-        flex-direction: column;  
-        justify-content: space-evenly;  
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #activity-col-1 #activity-col-3{
+        height: 164px;
     }
 
-
+   
     #activity_frame_1 , #activity_frame_2 , #activity_frame_3 , 
     #activity_frame_4 , #activity_frame_5 , #activity_frame_6
     {
         width: 300px;
         height: 164px;
         position: unset;
-        background-color: white;
+        background-color: unset;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         border-radius: 15px;
     }
-
-    /* inserting images  */
-    #activity_frame_1 div{
-        width: 300px;
-        height: 110px;
-        border-radius: 15px 15px 0 0;
-        background: url(./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat center center / cover;
-    }
     
-    #activity_frame_2 div{
-        width: 300px;
-        height: 110px;
-        border-radius: 15px 15px 0 0;
-        background: url(./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat center center / cover;
+    #activity_frame_3 , #activity_frame_6{
+        margin-top: 30px;
     }
 
-    #activity_frame_3 div{
-        width: 300px;
-        height: 110px;
+    #activity-pic-1 , #activity-pic-2 , #activity-pic-3 ,
+    #activity-pic-4 , #activity-pic-5 , #activity-pic-6
+    {
+        width: 295px;
+        height: 105px;
+        position: unset;
+        padding-left: 6px;
+        padding-top: 10px;
         border-radius: 15px 15px 0 0;
-        background: url(./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) no-repeat center center / cover;
     }
-
-    #activity_frame_4 div{
-        width: 300px;
-        height: 110px;
-        border-radius: 15px 15px 0 0;
-        background: url(./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat center center / cover;
-    }
-
-    #activity_frame_5 div{
-        width: 300px;
-        height: 110px;
-        border-radius: 15px 15px 0 0;
-        background: url(./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat center center / cover;
-    }
-
-    #activity_frame_6 div{
-        width: 300px;
-        height: 110px;
-        border-radius: 15px 15px 0 0;
-        background: url(./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat center center / cover;
-    } 
-    
+    /* FOOTER */
     footer{
         height: 400px;
     }
@@ -191,6 +208,7 @@
     }
 
     #footer_flex_container div{
+        width: 375px;
         padding-bottom: 20px;
     }
 

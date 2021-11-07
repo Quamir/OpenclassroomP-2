@@ -30,6 +30,10 @@
             <div id="map-marker"><i class="fas fa-map-marker-alt"></i></div> 
                 <input type="text" id="search-bar" placeholder="Marseille, France" maxlength="25" autocomplete="off">
                 <input type="submit" id="search-btn" value="Search"/>
+                <div id="magnifying-glass">
+                    <input type="submit" id="mobile-search-btn"  class="mobile-search">
+                    <i class="fas fa-search"></i> 
+                </div>
         </form>
         <p id="mobile-filters">Filters</p>
         <div id="filters">
@@ -191,13 +195,13 @@
     <section id=activities>
         <h2>Activities in Marseille</h2>
         <div class="activities-flex-grid-container">
-          <div class="activity-col">
+          <div class="activity-col" id="activity-col-1">
             <div id="activity_frame_1" class="activity_frame">
                 <a href="#"><img src="./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Tout bleu et Blanc hotel" id="activity-pic-1"></a>
                 <p><a href="#">Old Port</a></p>
             </div>
           </div>
-          <div class="activity-col">
+          <div class="activity-col" id="activity-col-2">
             <div id="activity_frame_2" class="activity_frame">
                 <a href="#"><img src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Tout bleu et Blanc hotel" id="activity-pic-2"></a>
                 <p><a href="#">Pomègues Fort</a></p>
@@ -207,13 +211,13 @@
                 <p><a href="#">Frioul Island</a></p>
             </div>
           </div>
-          <div class="activity-col">
+          <div class="activity-col" id="activity-col-3">
             <div id="activity_frame_4" class="activity_frame">
                 <a href="#"><img src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Tout bleu et Blanc hotel" id="activity-pic-4"></a>
                 <p><a href="#">Calanques National Park</a></p>
             </div>
           </div>
-         <div class="activity-col">
+         <div class="activity-col" id="activity-col-4">
             <div id="activity_frame_5" class="activity_frame">
                 <a href="#"><img src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Tout bleu et Blanc hotel" id="activity-pic-5"></a>
                 <p><a href="#">Notre-Dame-de-la-Garde</a></p>

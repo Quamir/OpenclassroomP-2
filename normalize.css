@@ -118,6 +118,14 @@ form{
     border-radius: 0 8px 8px 0;
  }
 
+ #mobile-search-btn{
+     display: none;
+ }
+
+ #magnifying-glass{
+     display: none;
+ }
+
  #search-btn:hover{
     cursor: pointer;
  }
@@ -141,7 +149,7 @@ form{
 
 #info i{
     color:var(--primary-blue);
-    padding-right: 10px;
+    
 }
 
 .filter-box{
@@ -180,12 +188,8 @@ form{
     color: var(--primary-blue);
     padding-left:10px;
 }
-
-/* End of Header CSS */
-
 /* First Showcase CSS */
 /* Accommodations */
-
 .frist-showcase{
     margin-top: 15px;
     height: 550px;
@@ -217,6 +221,7 @@ form{
 .col{
     width:780px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
 }
@@ -380,7 +385,6 @@ form{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
-    
 }
 
 .activity-col{
