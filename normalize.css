@@ -17,8 +17,16 @@ h2, p, ul {
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+}
+
 header , section  {
-    margin-left: 5%;
+    margin-left: 7%;
 }
 
 /* .flex-grid , .activities-flex-grid-container{
@@ -41,7 +49,6 @@ a:visited{
 body{
    width: max-content;
    margin:auto;
-   /* overflow-x: hidden; */
 }
 
 /* Header */
@@ -309,7 +316,6 @@ form{
 }
 
 #most-pop-title-container :nth-child(1){
-    width: 200px;
     height: 50px;
     text-indent: 30px;
 }
@@ -554,7 +560,6 @@ footer{
     width: 1519px;
     height: 200px;
     margin: 0;
-    overflow-y: hidden;
     background-color: #F2F2F2;
 }
 
@@ -563,7 +568,6 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     width: 950px;
-    margin: 0 0 0 100px;
     padding-top: 20px;
 }
 
