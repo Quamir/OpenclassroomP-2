@@ -299,14 +299,13 @@ form{
   margin-right: 50px;
 }
 
-
 #most-pop-title-container{
-    width: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    padding-top: 20px;
+   width: 400px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   padding-top: 20px;
 }
 
 #most-pop-title-container :nth-child(1){
@@ -320,21 +319,6 @@ form{
     text-indent: 40px;
     font-size: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #most-popular-grid-container{
     height: 450px;

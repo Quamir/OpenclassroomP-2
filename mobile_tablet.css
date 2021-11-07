@@ -1,6 +1,7 @@
 @media (max-width: 992px) and (min-width: 768px){
     body{
-        width: 1000;
+        width: auto;
+        
     }
 
     header , section  {
@@ -9,27 +10,27 @@
     
 
     .menu{
-        width: 900px;
+        width: 750px;
         justify-content: space-between;
         flex-grow: 3;
     }
 
     .frist-showcase{
-        width: 768px;
-        height: 965px;
+        width: 800px;
+        height: 1300px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
 
     }
-
+    /* MOST POPULAR */
     #most-popular{
-        width: 800px;
-        height: 400px;
+        width: 750px;
+        height: 415px;
     }
 
     #most-pop-title-container{
-        width: 800px;
+        width: 720px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -37,18 +38,15 @@
     }
 
     #most-pop-title-container :nth-child(1){
-        width: 300px;
-        height: 50px;
+        text-indent: 40px;
     }
 
     #most-pop-title-container :nth-child(2){
-        width: 300px;
-        height: 50px;
         text-align: end;
     }
 
     #most-popular-grid-container{
-        width: 750px;
+        width: 720px;
         height: 350px;
         flex-direction: row;
         justify-content: space-between;
@@ -63,5 +61,87 @@
     .frame-flex{
         height: 50px;
     }
+
+    /* ACCOMMODATIONS IN MARSEILLE */
+
+    #accommodations{
+        width: 750px;
+        height: 850px;
+    }
+
+    .flex-grid{
+        height: 700px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .col{
+        height: 650px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* ACTIVITIES IN MARSEILLE */
+
+    #activities{
+        width: 750px;
+        height: 3000px;
+        margin-top: 60px;
+        margin-left: 35px;
+    }
+
+    #activities h2{
+        text-indent: 40px;
+    }
+
+    .activities-flex-grid-container{
+        height: 2900px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #activity-col-1 #activity-col-3{
+        height: 164px;
+    }
+
+   
+    #activity_frame_1 , #activity_frame_2 , #activity_frame_3 , 
+    #activity_frame_4 , #activity_frame_5 , #activity_frame_6
+    {
+        width: 700px;
+        height: 455px;
+        position: unset;
+        background-color: unset;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 20px;
+    }
+    
+    #activity_frame_3 , #activity_frame_6{
+        margin-top: 30px;
+    }
+
+    #activity-pic-1 , #activity-pic-2 , #activity-pic-3 ,
+    #activity-pic-4 , #activity-pic-5 , #activity-pic-6
+    {
+        width: 700px;
+        height: 400px;
+        position: unset;
+        border-radius: 20px 20px 0 0;
+    }
+
+    /* FOOTER */
+
+    footer{
+        width: 900px;
+        height: 400px;
+    }
+
+    #footer_flex_container{
+        width: 600px;
+        flex-wrap: wrap;
+    }
+    
 
 }
