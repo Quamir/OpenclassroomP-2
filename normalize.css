@@ -17,9 +17,13 @@ h2, p, ul {
     margin: 0;
 }
 
-header , section{
-    margin-left: 100px;
+header , section  {
+    margin-left: 5%;
 }
+
+/* .flex-grid , .activities-flex-grid-container{
+    margin-left: 5%;
+} */
 
 ul{
     list-style: none;
@@ -295,17 +299,42 @@ form{
   margin-right: 50px;
 }
 
-.fa-chart-line{
-    position: relative;
-    top: -18px;
-    left: 320px;
+
+#most-pop-title-container{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 20px;
 }
 
-#most-popular h2{
-    font-size: 20px;
-    padding-top: 30px;
-    padding-left: 44px;
+#most-pop-title-container :nth-child(1){
+    width: 200px;
+    height: 50px;
+    text-indent: 30px;
 }
+
+#most-pop-title-container :nth-child(2){
+    text-align: center;
+    text-indent: 40px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #most-popular-grid-container{
     height: 450px;
