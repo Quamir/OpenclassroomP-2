@@ -87,7 +87,7 @@
         display: flex;
         flex-direction: column;
         width: 300px;
-        margin-left: 60px;
+        margin-left: 5%;
         align-items: center;
     }
     h1{
@@ -116,14 +116,14 @@
     }
     /* MOST POPULAR */
     #most-popular{
-        width: 101%;
+        width: 100%;
         height: 500px;
         border-radius: unset;
-        margin-left: 6.3%;    
+        margin-left: 7%;    
     }
 
     #most-pop-title-container{
-        width: 370px;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -131,6 +131,7 @@
     }
 
     #most-popular-grid-container{
+        width: 100%;
        height: 400px;
     }
 
@@ -148,6 +149,7 @@
         width: 370px;
         height: 1200px;
         background-color: transparent;
+        margin-left: 5%;
     }
 
     #accommodations h2{
@@ -155,27 +157,27 @@
     }
 
     .flex-grid{
-        width: 370px;
+        width: 101%;
         height: 1215px;
         align-items: center;
         justify-content: space-between;
-        margin-left: 6%;
+       
     }
     .col{
-        width: 300px;
+        width: 100%;
         height: 600px;
         flex-direction: column;
         align-items: center;
     }
 
     .picture-frame{
-        width: 300px;
+        width: 80%;
         height: 190px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
     }
 
     .picture-frame div img.pic{
-        width: 289px;
+        width: 127%;
         height: 100px;
         padding-left: -5px;
     }
@@ -225,6 +227,7 @@
     footer{
         width: 100%;
         height: 400px;
+    
         
     }
     #footer_flex_container{
