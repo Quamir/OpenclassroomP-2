@@ -53,7 +53,7 @@ body{
 
 /* Header */
 header{
-    width:1300px;
+    width: max-content;
 }
 
 #logo-mobile{
@@ -146,59 +146,113 @@ form{
  }
 /* End of Search  */
 /* Filters */
-#filters{
+
+.filters{
     display: flex;
     flex-direction: row;
-    height: 35px;
-    width: 870px;
+}
+#filter-title{
+    font-weight: bolder;
+    padding-top: 10px;
+}
+.filter-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20%;
+    width: 50%;
     margin-top: 0;
 }
 
-#info{
-    margin-top: 20px;
-}
-
-#info i{
-    color:var(--primary-blue);
-    
-}
 
 .filter-box{
+    width: max-content;
+    height: 35px;
     display: flex;
     flex-direction: row;
-    
     border: 3px solid #F2F2F2;
     border-radius: 19px;
     text-align: center;
     margin-left: 20px;
 }
 
-#mobile-filters{
-    display: none;
-}
 
-#filters p{
-    padding-top: 7px;
-    padding-left: 10px;
-    padding-right: 13px;
-    padding-bottom: 10px
+.filter-buttons p{
+    white-space: nowrap;
+    border: 5px solid transparent;
+    padding-right: 5px;
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 .circle{
     position: relative;
-    left: -5px;
-    float: left;
-    padding-right: 10px;
-    padding-top: 5px;
-    border-radius: 15px;
+    height: 35px;
+    width: 35px;
+    left:  -3px;
+    top: -3px;
+    padding-top: 2%;
+    border-radius: 50%;
     background-color: var(--secondary-blue);
 }
 
 .circle i {
     width: inherit;
     color: var(--primary-blue);
-    padding-left:10px;
+    position: relative;
+    top: 5.5px;
+   
 }
+
+/* END OF FILTERS */
+/* INFO */
+.info-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-circle{
+    width:  13px;
+    height:  10px;
+    background-color: var(--primary-blue);
+    z-index: 1;
+    border-radius: 40px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    z-index: 1;
+}
+
+.info-wrapper :nth-child(1){
+  position: relative;
+  top: 18px;
+  left: -1px;
+  
+}
+
+.fa-info-circle{
+    color: white;
+    border-radius: 40px;
+    border: 1.5px solid var(--primary-background);
+    z-index: 2;
+}
+
+.info-wrapper span{
+    display: inline-block;
+    width: 425px;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 17px;
+}
+
+
+#info i{
+    color: white;
+    background-color: var(--primary-blue) ;
+}
+/* END OF INFO */
+
+
 /* First Showcase CSS */
 /* Accommodations */
 .frist-showcase{
@@ -218,6 +272,7 @@ form{
 
 #accommodations h2{
     text-indent: 30px;
+    font-size: 20px;
 }
 
 .flex-grid{
@@ -311,30 +366,32 @@ form{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   margin-bottom: 20px;
    padding-top: 20px;
 }
 
 #most-pop-title-container :nth-child(1){
     height: 50px;
     text-indent: 30px;
+    font-size: 20px;
 }
 
 #most-pop-title-container :nth-child(2){
     text-align: center;
-    text-indent: 40px;
+    padding-right: 35px;
     font-size: 25px;
 }
 
 #most-popular-grid-container{
-    height: 450px;
+    width: 100%;
+    height: 425px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+
 .popular-frame{
-    width:310px;
+    width: 80%;
     height:125px;
     margin-left: 30px;
     border-radius: 15px;
@@ -569,6 +626,7 @@ footer{
     justify-content: space-between;
     width: 950px;
     padding-top: 20px;
+    padding-left: 7%;
 }
 
 #footer_flex_container ul{

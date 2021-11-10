@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="mobile_tablet.css">
     <title>BOOKI</title>
@@ -35,30 +35,49 @@
                     <input type="submit" id="mobile-search-btn"  class="mobile-search">
                     <i class="fas fa-search"></i> 
                 </div>
+
         </form>
-        <p id="mobile-filters">Filters</p>
-        <div id="filters">
+     
+        <div class="filters">
             <div id="filter-title"> 
                 <p>Filters</p>
             </div>
-            <div class="filter-box">
-                <div class="circle" ><i class="fas fa-money-bill-wave"> </i></div>
-                <p><a href="#"> Low cost</a></p>
-            </div>
-            <div class="filter-box">
-                <div class="circle"><i class="fas fa-child"></i></div>
-                <p><a href="#">Family-Friendly</a></p>
-            </div>
-                <div class="filter-box">
+
+            <div class="filter-buttons">
+              <div class="filter-box">
+                    <div class="circle" ><i class="fas fa-money-bill-wave"> </i></div>
+                    <p><a href="#"> Low cost</a></p>
+              </div>
+              <div class="filter-box">
+                    <div class="circle"><i class="fas fa-child"></i></div>
+                    <p><a href="#">Family-Friendly</a></p>
+              </div>
+              <div class="filter-box">
                     <div class="circle"><i class="fas fa-heart"></i></div>
                     <p><a href="#">Romatic</a></p>
-                </div>
-                <div class="filter-box">
+              </div>
+              <div class="filter-box">
                     <div class="circle"><i class="fas fa-dog"></i></div>
                     <p><a href="#">Pets allowed</a></p>
-                </div>
+              </div>
+           </div>
+
         </div>
-             <p id="info"><i class="fas fa-info-circle"></i>More than 500 accommodations are available in this city </p>
+
+
+
+
+            <div class="info-wrapper">
+                <div>
+                <i id="info" class="fas fa-info-circle"> </i>
+                <div class="info-circle"></div>
+                </div>
+                <div>
+                 <span> more than 500 accommodations are available in this city</span>
+                </div>
+            </div>
+
+
             
     </header>
     <section class="frist-showcase"> 
@@ -78,6 +97,7 @@
                         <li><i class="fas fa-star grey-star" ></i></li>
                     </ul>
                 </div>
+
                 <div class="picture-frame">
                     <div><a href="#"><img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Auberge la Cannebiére" class="pic"></a></div>
                     <p><a href="#">Hôtel du port</a></p>

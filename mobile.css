@@ -23,6 +23,7 @@
     header{
         margin: 0;
         width: 100%;
+        height: 500px;
     }
 
     /* MENU */
@@ -86,40 +87,69 @@
     header{
         display: flex;
         flex-direction: column;
-        width: 300px;
-        margin-left: 5%;
+        width: 90%;
+        margin-left: 10%;
         align-items: center;
     }
     h1{
+        width: 80%;
         align-items: center;
         padding-top: 5px;
         font-size: 20px;
     }
     /* FILTERS */
-    #filters{
-        width: 100%;
-        flex-wrap: wrap;
+    .filters{
+        flex-direction: column;
     }
 
-    p#info{
-        margin-top: 150px;
+    .filter-buttons{
+        width: 100%;
+        justify-content: unset;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 150px;
+    }
+
+    .filter-buttons :nth-child(1){
+        order: 1;
+    }
+
+    .filter-buttons :nth-child(2){
+        order: 3;
+    }
+
+    .filter-buttons :nth-child(3){
+        order: 2;
+    }
+
+    .filter-buttons :nth-child(4){
+        order: 4;
+        padding-right: 40px;
+    }
+  
+
+    .info-wrapper{
+        width: 100%;
+        
+    }
+
+    .info-wrapper span{
+        width: 100%;
+        font-size: 16px;
     }
 
     #filter-title{
-        display: none;
+        text-indent: 20px;
+        padding-bottom: 10px;
     }
 
-    #mobile-filters{
-        display: inline;
-        position: relative;
-        left: -140px;
-    }
+ 
     /* MOST POPULAR */
     #most-popular{
         width: 100%;
-        height: 500px;
+        height: 550px;
         border-radius: unset;
-        margin-left: 7%;    
+        margin-left: 7%; 
     }
 
     #most-pop-title-container{
@@ -127,18 +157,20 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 20px;
     }
 
     #most-popular-grid-container{
         width: 100%;
-       height: 400px;
+       
     }
 
+    .popular-frame{
+        
+    }
     /* FRIST SHOWCASE */
     .frist-showcase{
         width: 99%;
-        height: 1700px;
+        height: max-content;
         display: flex;
         flex-direction: column-reverse;
         margin-left: -6.3%;
@@ -147,7 +179,7 @@
     #accommodations{
         margin-top: unset;
         width: 370px;
-        height: 1200px;
+        height: max-content;
         background-color: transparent;
         margin-left: 5%;
     }
@@ -185,7 +217,6 @@
     #activities{
         width: 300px;
         height: 1230px;
-        margin-top: 160px;
         margin-left: 35px;
     }
 
