@@ -31,11 +31,12 @@ button{
 
 body{
     width: 100%;
+    max-width: 2000px;
     margin: auto;
 }
 
 header , section{
-  margin-left: 7%;
+   margin-left: 7%;
 }
 
 /* Header */
@@ -110,7 +111,6 @@ form{
 }
 
  .search-btn{
-     width: 4.3%;
     color:white;
     background-color: var(--primary-blue);
     text-align: center;

@@ -1,3 +1,119 @@
 @media (max-width: 992px) and (min-width: 768px){
- 
+
+    header , section {
+        width: 95%;
+        margin: unset;
+    }
+
+    header{
+        margin: 3%;
+    }
+
+    .menu{
+        width: 90%;
+    }
+
+    .menu ul{
+        width: unset;
+    }
+
+    .blue-border{
+        border-top:  3px solid var(--primary-blue);
+   }
+
+   .menu ul :nth-child(2){
+        border-color: var(--primary-background);
+   }
+
+    .filters{
+        width: 100%;
+    }
+    
+    .frist-showcase{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 975px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Most Pop */
+    .most-pop-title-container{
+        height: 50px;
+    }
+
+    .most-pop{
+        width: 96%;
+        height: 400px;
+        order: 1;
+        flex-direction: row;
+        margin: unset;
+    }
+
+    .most-pop-grid-container{
+        width: 90%;
+        height: 300px;
+        flex-direction: row;
+        height: unset;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    .most-pop-grid-container .img-card{
+        margin: 10px;
+     }
+
+    /* Accommodations */
+    .accommodations{
+        width: 96%;
+        order: 2;
+    }
+    .accommodations .col{
+        width: 95%;
+    }
+
+    .accommodations .img-card{
+        width: 225px;
+    }
+
+    .accommodations .img-card .pic{
+        width: 96%;
+    }
+
+    /* activities */
+    .activities{
+        width: 100%;
+        height: 2100px;
+    }
+
+    .activities h2{
+        text-indent: 80px;
+    }
+
+    .activities-flex-container{
+        height: 2000px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .activities .col{
+        width: 80%;
+    }
+
+    .activities .img-card{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 40px;
+    }
+
+    .activities .activities-flex-container .img-card .pic{
+        height: 80%;
+    }
+
+    /* footer */
+    .footer-flex-container{
+        width: 90%;
+    }
+
 }
