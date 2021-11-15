@@ -22,6 +22,8 @@
     }
 
     body{
+        width: 100%;
+        min-width: unset;
         height: max-content;
     }
 
@@ -35,7 +37,8 @@
     }
 
     .menu ul{
-        padding-top: 20px;
+        padding: 20px 0 0 0;
+
         width: 100%;
 
     }
@@ -95,6 +98,8 @@
     }
 
     .magnifying-glass{
+        width: 100px;
+        height: 40px;
         display: unset;
         position: relative;
         left: -30px;
@@ -145,6 +150,10 @@
         flex-wrap: wrap;
         height: 150px;
         padding-left: 5%;
+    }
+
+    .filter-btn{
+        margin-left: 5px;
     }
 
     .filter-buttons :nth-child(1){
