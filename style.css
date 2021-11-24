@@ -23,56 +23,46 @@ ul{
     list-style: none;
 }
 
-
 body{
-    margin: auto;
-    min-width: max-content;
-    
+    margin: 0 auto;
+    max-width: 1519px;
 }
 
-header , section{
-    width: 95%;
-    margin-left: 7%;
+header , main , .activities{
+    padding-left: 7%;
 }
 
 /* Header */
 header{
-    width: 85%;
+    width: 1500px;
 }
 
 /* NAV */
 
-.menu{
-    width: 100%;
+.header-nav{
+    width: 1300px;
     display: flex;
     justify-content: space-between;
 }
+
 
 .logo img {
     width: 94px;
     height: 44px;
 }
 
-.menu ul{
+.header-nav__options{
+    width: 20%;
     display: flex;
-    width: 22.2%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-/* Makes the second list item take the remaining space */
-.menu ul :nth-child(2){
-   flex-grow: 1;
-   text-indent: 50px;
-}
-/* hides the border for nav menu when not active */
-.blue-border{
-     border-top:  3px solid transparent;
-}
-
-.blue-border:hover{
+.header-nav a:hover{
     border-top:  3px solid var(--primary-blue);
 }
-/* changes the color of the nav menus font when in a hover state */
-.menu li a:hover{
+
+.header-nav a:hover{
     color: var(--primary-blue);
 }
 
@@ -88,10 +78,10 @@ h1{
 
 /* Search bar */
 
-form{
+.search-bar{
     height: 30px;
     display: flex;
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
  }
 
  /* make the placeholder text bolder */
@@ -105,7 +95,7 @@ button{
     background-color: var(--card-background-color);
  }
 
-.map-marker{
+.search-bar__map-marker{
     width: 3%;
     padding-top:5px;
     text-align: center;
@@ -113,12 +103,12 @@ button{
     border-radius: 8px 0 0 8px ;
 }
 /* The text indent on this elemnt makes the users cursor begin at the placeholder */
-.search-bar{
+.search-bar__text-feild{
     border: 3px solid var(--primary-background);
     text-indent:25px;
 }
 
- .search-btn{
+ .search-bar__search-btn{
     color:white;
     background-color: var(--primary-blue);
     border-style: none;
@@ -126,11 +116,11 @@ button{
  }
 
  /* Hides the moblie search button elements */
- .magnifying-glass{
+ .search-bar__mobile-icon{
      display: none;
  }
 
- .search-btn:hover{
+ .search-bar__search-btn:hover{
     cursor: pointer;
  }
 
@@ -146,7 +136,8 @@ button{
 
 .filter-title{
     font-weight: bolder;
-    padding-top: 10px;
+    font-size: 16px;
+    padding-top: 5px;
 }
 
 .filter-buttons{
@@ -164,7 +155,7 @@ button{
     border-radius: 19px;
 }
 
-.filter-buttons p{
+.filter-buttons a{
     border: 5px solid transparent;
     font-size: 15px;
     font-weight: bolder;
@@ -189,310 +180,302 @@ button{
 
 /* END OF FILTERS */
 /* INFO */
-.info-wrapper{
+
+.informative-wrapper{
     display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
 }
 
-.info-circle{
-    width:  13px;
-    height:  10px;
-    background-color: var(--primary-blue);
-    border-radius: 40px;
-    position: relative;
-    top: 2px;
-    left: 2px;
-}
-
-.info-wrapper :nth-child(1){
-  position: relative;
-  top: 18px;
-  left: -1px;
-}
-/* places info icon in front of a blue background so the transparent I shows  */
-.fa-info-circle{
-    color: white;
-    border-radius: 40px;
+.informative__info-circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
     border: 1.5px solid var(--primary-background);
-    z-index: 1;
+    background-color:white ;
 }
 
-.info-wrapper span{
-    display: inline-block;
-    width: 425px;
-    height: 80px;
-    padding-left: 10px;
-    padding-top: 17px;
+.informative__text{
+    width: 418px;
 }
 
-
-.info i{
-    color: white;
-    background-color: var(--primary-blue) ;
+.fa-info{
+    position: relative;
+    top: 6px;
+    left: -15px;
+    font-size: 12px;
+    color: var(--primary-blue);
 }
+
 /* END OF INFO */
 
 
-/* First Showcase CSS */
-/* Accommodations */
-.frist-showcase{
-    margin-top: 15px;
-    height: 550px;
-    width: 1300px;
+main{
+    width: 1518px;
+    height: 600px;
     display: flex;
     justify-content: space-between;
 }
 
-.accommodations{
+/* First Showcase CSS */
+
+/* AccomadATIONS */
+.accom{
     width: 850px;
-    height: 550px;
+    height: 560px;
     border-radius: 15px;
-    padding-top: 35px;
+    padding-top: 20px;
     background-color:var(--primary-background);
 }
 
-.accommodations h2{
+.accom-title{
     text-indent: 30px;
-    font-size: 20px;
+    font-size: 22px;
+    padding-bottom: 20px;
 }
 
-.flex-grid{
-    height: 400px;
+.accom-wrapper{
+    margin: 0;
+    width: 850px;
+    height: 420px;
     display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.col{
-    width: 780px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-
-.col .img-card{
+.accom-card{
+    display: block;
     width: 241px;
     height: 190px;
     border-radius: 15px;
     background-color: var(--card-background-color);
 }
-/* the margin left is use to center the image giving it a white outlinne form the color of */
-.accommodations .col .pic{
-   width: 230px;
-   height: 105px;
-   border-radius: 15px 15px 0 0;
-   object-fit: cover;
-   margin-left: 6px;
-   margin-top: 5px;
+
+.accom-card__img{
+    width: 230px;
+    height: 105px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    margin-left: 6px;
+    margin-top: 5px;
 }
 
-.col .img-card p{
-    text-indent: 20px;
-    padding-top: 10px;
-    font-weight: bold;
+.accom-card__title{
+    font-size: 16px;
 }
 
-.col .img-card p:nth-of-type(2){
+.accom-card__text-content{
+    padding-left: 10px;
+}
+
+.accom-card__star-rating{
     padding-top: 5px;
-    font-weight:normal ;
-    font-size: 12px;
-}
-/* makes the EURO amount bold  */
-.col .img-card p:nth-of-type(2) i{
-    font-weight: bold;
-}
-/* aligns the stars lol */
-.col .img-card ul{
-    display: flex;
-    flex-direction: row;
-    padding-top: 5px;
-    padding-left: 20px;
 }
 
-.col .img-card ul li{
-    font-size: 12px;
-    color: var(--primary-blue);
+.accom-card__text-content i{
+    font-weight: bolder;
 }
 
-.show-more{
-    margin-top: 30px;
-    text-indent: 50px;
-    font-weight: bold;
+.fa-star{
+    color: var(--primary-blue)
 }
+
+.fa-star.gray-star{
+    color: #d9d9d9;
+}
+
+.accom-card__price{
+    font-size: 14px;
+}
+
+.accom-showmore-btn{
+    border: none;
+    background-color: unset;
+    font-weight: bolder;
+    font-size: 15px;
+    text-indent: 25px;
+    margin-top: 25px
+}
+
 
 /*Most Popular */
+
 .most-pop{
-  width: 400px;
-  height:550px;
-  background-color: var(--primary-background);
-  border-radius: 15px;
+    width: 400px;
+    height: 560px;
+    margin-right: 100px;
+    border-radius: 15px;
+    background-color: var(--primary-background);
 }
 
-.most-pop-title-container{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   padding-top: 20px;
+.most-pop__title{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top:25px;
+    font-size: 18px;
 }
 
-.most-pop-title-container :nth-child(1){
-    height: 50px;
-    text-indent: 30px;
-    font-size: 20px;
-}
-
-.most-pop-title-container :nth-child(2){
-    padding-right: 35px;
-    font-size: 25px;
-}
-
-.most-pop-grid-container{
-    width: 100%;
-    height: 425px;
+.most-pop__wrapper{
+    width: 400px;
+    height: 470px;
+    padding-top:20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    
 }
 
-
-.most-pop-grid-container .img-card{
+.most-pop-card{
     width: 310px;
     height:125px;
     border-radius: 15px;
-    background-color: var(--card-background-color);
+    background-color:var(--card-background-color);
     display: flex;
 }
 
-.most-pop-grid-container .img-card img{
-    height: 120px;
+.most-pop-card__img{
+    width:120px;
+    height:120px;
+    border-radius: 15px 0 0 15px;
     padding-top: 5px;
     padding-left: 5px;
     object-fit: cover;
 }
 
-.most-pop-grid-container .img-card ul{
-    height: 30px;
-    display: flex;
-    font-size: 12px;
-    color: var(--primary-blue);
-}
-
-.grey-star{
-    color: #d9d9d9;
-}
-
-.card-text{
-    padding-left: 20px;
+.most-pop-card__text-content{
+    padding-left: 10px;
     padding-top: 10px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
 }
-/* makes the frist line of text for the img card bold */
-.card-text :first-child{
-    font-weight: bolder;
+
+.most-pop-card__title{
+    height: 48px;
+    font-size: 16px;
+    padding-bottom: 10px;
 }
-/* adds space for the second line of the img card and space between stars inline with the mock-up */
-.card-text :nth-child(2){
-    font-size: 12px;
-    padding-bottom: 30px;
-}
-/* makes the Euro amount bold */
-.card-text :nth-child(2) i{
+
+.most-pop-card__price i{
     font-weight: bolder;
 }
 
-.most-pop .img-card .img{
-    width:120px;
-    height:112px;
-    border-radius: 15px 0 0 15px;
-}
-
-/* Activities in Marseille */
-.activities{
-    width: 1350px;
-    height:450px;
-    margin-top:60px;
-}
-
-.activities-flex-container{
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.most-pop-card__star-rating{
     margin-top: 20px;
 }
 
-.activities .col{
+/* Activities */
+
+.activities{
+    width: 1428px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.activities__img{
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    height: 50%;
+}
+
+.activities-wrapper{
+    margin-top: 20px;
+    height: 400px;
+    display: flex;
+}
+
+.activities__col{
     width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.activities-flex-container .img-card{
-    width: 85%;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
-    border-radius: 15px;
+.activites-card{
+    border-radius: 17px;
     background-color: var(--card-background-color);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
 }
 
-.activities-flex-container .img-card p{
-    position: relative;
-    top: 2px;
-    font-weight: bolder;
-}
-/* Activities picture height before text */
-.activities-flex-container .pic{
-    width: 100%;
-    height: 85%;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-}
+/* activity card heights and widths */
 
-#col-2 div:nth-of-type(1) .pic , #col-2 div:nth-of-type(2) .pic,
-#col-4 div:nth-of-type(1) .pic , #col-4 div:nth-of-type(2) .pic{
-    height: 70%;
-}
-
-#col-1 .img-card , #col-3 .img-card {
+.col-1 .activites-card , .col-3 a.activites-card {
     height: 100%;
-  
+    width: 90%;
 }
 
-#col-2 div:nth-of-type(1) , #col-4 div:nth-of-type(2){
+.col-2 a:nth-of-type(1){
+    width: 90%;
     height: 50%;
-  
 }
 
-#col-2 div:nth-of-type(2) , #col-4 div:nth-of-type(1){
+.col-2 a:nth-of-type(2){
+    width: 90%;
     height: 40%;
 }
 
-/* Footer  */
-footer{
-    width: 100%;
-    margin-left: 50px;
-    height: 200px;
-    margin: 0;
-    background-color: #F2F2F2;
+.col-4 a:nth-of-type(1){
+    width: 90%;
+    height: 40%;
 }
 
-.footer-flex-container{
+.col-4 a:nth-of-type(2){
+    width: 90%;
+    height: 50%;
+}
+
+
+
+.activities__img.img-2 , .activities__img.img-3 , .activities__img.img-5 , .activities__img.img-6{
+    width: 100%;
+    height: 72%;
+}
+
+.activities__img.img-1 , .activities__img.img-4{
+    width: 100%;
+    height: 87%;
+    
+}
+
+.activites-card__title{
+    width: 100%;
+    font-weight: bolder;
+    padding-top: 10px;
+    text-indent: 20px;
+}
+
+
+
+/* Footer  */
+.booki-footer{
+    width: 100%;
+    height: 200px;
+    background-color: #F2F2F2;
+  
+}
+
+.booki-footer__nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 950px;
+    width: 1085px;
     padding-top: 20px;
     padding-left: 7%;
 }
 
-.footer-flex-container ul{
-    line-height: 30px;
-    padding-left: 0px;
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.footer__label{
+    text-indent: 5px;
+}
+
+.footer__link{
+    padding: 5px;
+}
+
+
