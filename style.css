@@ -7,27 +7,27 @@
 --card-background-color:#ffffff;   
 }
 /* General sizing properties */
-
+/* combines content padding and border but not margin */
+/* margin 0 resets margin calculations for all elments as bowser settings can throw things off */
 *{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    margin: 0;     
 }
 
+/* The text-decoration: none gets rid of the underline on a tags 
+   the color: black keeps a tags from turning black  */
 a{
     text-decoration: none;
     color: black;
 }
-
-ul{
-    list-style: none;
-}
-
+/* margin auto to center whole page on zoom out 
+   with a max-width to prevent distortion on zoom out */
 body{
     margin: 0 auto;
     max-width: 1519px;
 }
-
+/* adds white space on left side from the main sections  */
 header , main , .activities{
     padding-left: 7%;
 }
@@ -38,13 +38,12 @@ header{
 }
 
 /* NAV */
-
 .header-nav{
     width: 1300px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
 }
-
 
 .logo img {
     width: 94px;
@@ -58,28 +57,24 @@ header{
     justify-content: space-between;
 }
 
-.header-nav a:hover{
-    border-top:  3px solid var(--primary-blue);
+.header-nav__options a:hover{
+    border-top: 3px solid var(--primary-blue);
 }
 
-.header-nav a:hover{
+.header-nav__options a:hover{
     color: var(--primary-blue);
 }
 
-.title{
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
-
-h1{
-    font-size: 24px;
+.main-heading{
+    font-size: 21px;
     padding-bottom: 7px;
+    margin-top: 20px;
 }
 
 /* Search bar */
 
 .search-bar{
-    height: 30px;
+    height: 35px;
     display: flex;
     margin: 20px 0 20px 0;
  }
@@ -90,25 +85,24 @@ h1{
     color: black;
  }
 
- 
-button{
-    background-color: var(--card-background-color);
- }
-
 .search-bar__map-marker{
     width: 3%;
-    padding-top:5px;
+    height: 35px;
+    padding-top: 7px;
     text-align: center;
     background-color: var(--primary-background);
     border-radius: 8px 0 0 8px ;
 }
-/* The text indent on this elemnt makes the users cursor begin at the placeholder */
+/* The text indent on this elemnt makes the users cursor begin at the placeholder text*/
 .search-bar__text-feild{
-    border: 3px solid var(--primary-background);
+    height: 35px;
+    border: 2px solid var(--primary-background);
     text-indent:25px;
+    outline: none;
 }
 
  .search-bar__search-btn{
+    height: 35px;
     color:white;
     background-color: var(--primary-blue);
     border-style: none;
@@ -117,14 +111,12 @@ button{
 
  /* Hides the moblie search button elements */
  .search-bar__mobile-icon{
-     display: none;
+    display: none;
  }
 
  .search-bar__search-btn:hover{
     cursor: pointer;
  }
-
-
 
 /* End of Search  */
 /* Filters */
@@ -151,28 +143,35 @@ button{
 .filter-btn{
     height: 35px;
     display: flex;
+    background-color: var(--card-background-color);
     border: 3px solid #F2F2F2;
     border-radius: 19px;
 }
 
+button.filter-btn :hover{
+  color: var(--primary-blue);
+}
+
+/* adding a transparent border makes the filter buttons more responsive than 
+ adding padding by adding padding every botton wouldn't look the same */
 .filter-buttons a{
-    border: 5px solid transparent;
+    border: 4px solid transparent;
     font-size: 15px;
     font-weight: bolder;
 }
 
-.circle{
+.filter-btn__circle{
     position: relative;
     height: 33.5px;
     width: 35px;
-    left:  -9px;
+    left: -9px;
     top: -3px;
     padding-top: 2%;
     border-radius: 50%;
     background-color: var(--secondary-blue);
 }
 
-.circle i {
+.filter-btn__circle i {
     position: relative;
     top: 5.5px;
     color: var(--primary-blue);
@@ -183,8 +182,7 @@ button{
 
 .informative-wrapper{
     display: flex;
-    flex-direction: row;
-    margin: 10px 0 10px 0;
+    margin: 25px 0 10px 0;
 }
 
 .informative__info-circle{
@@ -192,7 +190,6 @@ button{
     height: 25px;
     border-radius: 15px;
     border: 1.5px solid var(--primary-background);
-    background-color:white ;
 }
 
 .informative__text{
@@ -209,12 +206,15 @@ button{
 
 /* END OF INFO */
 
-
 main{
     width: 1518px;
     height: 600px;
     display: flex;
     justify-content: space-between;
+}
+
+.fa-star{
+    font-size: 14px;
 }
 
 /* First Showcase CSS */
@@ -229,14 +229,14 @@ main{
 }
 
 .accom-title{
-    text-indent: 30px;
+    text-indent: 50px;
     font-size: 22px;
     padding-bottom: 20px;
 }
 
 .accom-wrapper{
-    margin: 0;
-    width: 850px;
+    margin-left: 25px;
+    width: 800px;
     height: 420px;
     display: flex;
     flex-wrap: wrap;
@@ -290,8 +290,8 @@ main{
 
 .accom-showmore-btn{
     border: none;
-    background-color: unset;
     font-weight: bolder;
+    background-color: unset;
     font-size: 15px;
     text-indent: 25px;
     margin-top: 25px
@@ -354,7 +354,6 @@ main{
 .most-pop-card__title{
     height: 48px;
     font-size: 16px;
-    padding-bottom: 10px;
 }
 
 .most-pop-card__price i{
@@ -376,7 +375,6 @@ main{
 .activities__img{
     border-radius: 15px 15px 0 0;
     object-fit: cover;
-    height: 50%;
 }
 
 .activities-wrapper{
@@ -394,7 +392,6 @@ main{
 
 .activites-card{
     border-radius: 17px;
-    background-color: var(--card-background-color);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
 }
 
@@ -425,8 +422,6 @@ main{
     height: 50%;
 }
 
-
-
 .activities__img.img-2 , .activities__img.img-3 , .activities__img.img-5 , .activities__img.img-6{
     width: 100%;
     height: 72%;
@@ -435,7 +430,6 @@ main{
 .activities__img.img-1 , .activities__img.img-4{
     width: 100%;
     height: 87%;
-    
 }
 
 .activites-card__title{
@@ -457,7 +451,6 @@ main{
 
 .booki-footer__nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 1085px;
     padding-top: 20px;
