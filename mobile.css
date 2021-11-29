@@ -379,6 +379,7 @@
 
     .activities-wrapper{
         width: 100%;
+        padding-left: 10%;
         height: 2200px;
         flex-direction: column;
         justify-content: space-between;
@@ -387,7 +388,7 @@
 
     .activities__col{
         width: 100%;
-        margin-left: 10%;
+       
     }
 
     .col-2 , .col-4{
