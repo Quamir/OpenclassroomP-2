@@ -59,9 +59,6 @@ header{
 
 .header-nav__options a:hover{
     border-top: 3px solid var(--primary-blue);
-}
-
-.header-nav__options a:hover{
     color: var(--primary-blue);
 }
 
@@ -148,14 +145,14 @@ header{
     border-radius: 19px;
 }
 
-button.filter-btn :hover{
+  .filter-btn :hover{
   color: var(--primary-blue);
 }
 
-/* adding a transparent border makes the filter buttons more responsive than 
- adding padding by adding padding every botton wouldn't look the same */
 .filter-buttons a{
-    border: 4px solid transparent;
+    width: max-content;
+    padding-right: 10px;
+    padding-top: 5px;
     font-size: 15px;
     font-weight: bolder;
 }
@@ -173,9 +170,28 @@ button.filter-btn :hover{
 
 .filter-btn__circle i {
     position: relative;
-    top: 5.5px;
+    top: 5px;
     color: var(--primary-blue);
 }
+
+.fas.fa-money-bill-wave{
+    font-size: 14px;
+    left: 8px;
+}
+
+.fas.fa-child{
+    left: 11px;
+}
+
+.fas.fa-heart{
+    left: 9px;
+}
+
+.fas.fa-dog{
+    left: 10px;
+}
+
+
 
 /* END OF FILTERS */
 /* INFO */
@@ -229,13 +245,13 @@ main{
 }
 
 .accom-title{
-    text-indent: 50px;
+    text-indent: 45px;
     font-size: 22px;
     padding-bottom: 20px;
 }
 
 .accom-wrapper{
-    margin-left: 25px;
+    margin: 0 0 10px 25px;
     width: 800px;
     height: 420px;
     display: flex;
@@ -256,8 +272,7 @@ main{
     height: 105px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
-    margin-left: 6px;
-    margin-top: 5px;
+    margin: 0 6px 0 5px;
 }
 
 .accom-card__title{
@@ -293,8 +308,7 @@ main{
     font-weight: bolder;
     background-color: unset;
     font-size: 15px;
-    text-indent: 25px;
-    margin-top: 25px
+    margin-left: 45px;
 }
 
 
@@ -311,8 +325,7 @@ main{
 .most-pop__title{
     display: flex;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px 0 50px;
     margin-top:25px;
     font-size: 18px;
 }
@@ -346,9 +359,8 @@ main{
 }
 
 .most-pop-card__text-content{
-    padding-left: 10px;
+    padding-left: 15px;
     padding-top: 10px;
-    
 }
 
 .most-pop-card__title{

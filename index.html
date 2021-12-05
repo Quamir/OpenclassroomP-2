@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" href="mobile_tablet.css">
     <title>BOOKI</title>
 </head>
 
@@ -26,7 +25,7 @@
         </nav>
 
         <h1 class="main-heading">Find a place for your dream vacation</h1>
-        <span>Downtown or in nature</span>
+        <span class="sub-header">Downtown or in nature</span>
 
         <form class="search-bar" action="submit" method="post">
             <div class="search-bar__map-marker"><i class="fas fa-map-marker-alt"></i></div> 
@@ -41,35 +40,35 @@
         <section class="filters">
             <h2 class="filter-title">Filters</h2>
                
-            <section class="filter-buttons">
+            <div class="filter-buttons">
 
-              <button class="filter-btn">
-                    <div class="filter-btn__circle" ><i class="fas fa-money-bill-wave"> </i></div>
+              <div class="filter-btn">
+                    <div class="filter-btn__circle"><i class="fas fa-money-bill-wave " id="money"> </i></div>
                     <a href="#"> Low cost</a>
-              </button>
+              </div>
 
-              <button class="filter-btn">
+              <div class="filter-btn">
                     <div class="filter-btn__circle"><i class="fas fa-child"></i></div>
                     <a href="#">Family-Friendly</a>
-              </button>
+              </div>
 
-              <button class="filter-btn">
+              <div class="filter-btn">
                     <div class="filter-btn__circle"><i class="fas fa-heart"></i></div>
                     <a href="#">Romantic</a>
-              </button>
+              </div>
 
-              <button class="filter-btn">
+              <div class="filter-btn">
                     <div class="filter-btn__circle"><i class="fas fa-dog"></i></div>
                     <a href="#">Pets allowed</a>
-              </button>
-            </section>
+              </div>
+            </div>
         </section>
 
             <div class="informative-wrapper">
                 <div class="informative__info-circle"></div>
                 <i class="fas fa-info"> </i>
             
-                <span class="informative__text"> more than 500 accommodations are available in this city</span>
+                <span class="informative__text"> More than 500 accommodations are available in this city</span>
             </div> 
     </header>
 
@@ -168,7 +167,7 @@
                     </div>
                 </a>
             </section>
-            <button class="accom-showmore-btn"> <a href="">show more</a></button>
+            <a href="#" class="accom-showmore-btn">show more</a>
         </section>
 
         <section class="most-pop">
@@ -280,7 +279,7 @@
                 <h4 class=footer__label>About</h4>
                     <a href="#" class="footer__link">Site map </a>
                     <a href="#" class="footer__link">General Terms and Conditions</a>
-                    <a href="#"class="footer__link">Data and privacy</a>
+                    <a href="#" class="footer__link">Data and privacy</a>
             </section>
 
             <section class="footer-col">
