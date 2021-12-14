@@ -8,7 +8,7 @@
 }
 /* General sizing properties */
 /* combines content padding and border but not margin */
-/* margin 0 resets margin calculations for all elments as bowser settings can throw things off */
+/* margin 0 resets margin calculations for all elments */
 *{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
@@ -27,7 +27,7 @@ body{
     margin: 0 auto;
     max-width: 1519px;
 }
-/* adds white space on left side from the main sections  */
+/* adds white space on left side for the main sections  */
 header , main , .activities{
     padding-left: 7%;
 }
@@ -54,7 +54,12 @@ header{
     width: 20%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;    
+}
+
+.header-nav__options a{
+    padding-top: 15px;
+    border-top: 3px solid transparent;
 }
 
 .header-nav__options a:hover{
@@ -63,7 +68,7 @@ header{
 }
 
 .main-heading{
-    font-size: 21px;
+    font-size: 24px;
     padding-bottom: 7px;
     margin-top: 20px;
 }
@@ -76,7 +81,7 @@ header{
     margin: 20px 0 20px 0;
  }
 
- /* make the placeholder text bolder */
+ /* makes the placeholder text bolder */
 ::-webkit-input-placeholder {
     font-weight: bolder;
     color: black;
@@ -92,6 +97,7 @@ header{
 }
 /* The text indent on this elemnt makes the users cursor begin at the placeholder text*/
 .search-bar__text-feild{
+    width: 200px;
     height: 35px;
     border: 2px solid var(--primary-background);
     text-indent:25px;
@@ -147,9 +153,10 @@ header{
 
   .filter-btn :hover{
   color: var(--primary-blue);
+  cursor: pointer;
 }
 
-.filter-buttons a{
+.filter-buttons span{
     width: max-content;
     padding-right: 10px;
     padding-top: 5px;
@@ -170,28 +177,9 @@ header{
 
 .filter-btn__circle i {
     position: relative;
-    top: 5px;
+    top: 7px;
     color: var(--primary-blue);
 }
-
-.fas.fa-money-bill-wave{
-    font-size: 14px;
-    left: 8px;
-}
-
-.fas.fa-child{
-    left: 11px;
-}
-
-.fas.fa-heart{
-    left: 9px;
-}
-
-.fas.fa-dog{
-    left: 10px;
-}
-
-
 
 /* END OF FILTERS */
 /* INFO */
@@ -229,9 +217,15 @@ main{
     justify-content: space-between;
 }
 
-.fa-star{
+.accom-card__rating , .most-pop-card__rating{
     font-size: 14px;
+    color: var(--primary-blue);
 }
+
+.accom-card__rating--sec-color, .most-pop-card__rating--sec-color{
+    color: #d9d9d9;
+}
+
 
 /* First Showcase CSS */
 
@@ -280,7 +274,7 @@ main{
 }
 
 .accom-card__text-content{
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
 .accom-card__star-rating{
@@ -289,14 +283,6 @@ main{
 
 .accom-card__text-content i{
     font-weight: bolder;
-}
-
-.fa-star{
-    color: var(--primary-blue)
-}
-
-.fa-star.gray-star{
-    color: #d9d9d9;
 }
 
 .accom-card__price{
@@ -361,6 +347,7 @@ main{
 .most-pop-card__text-content{
     padding-left: 15px;
     padding-top: 10px;
+    flex-grow: 1;
 }
 
 .most-pop-card__title{
@@ -377,7 +364,7 @@ main{
 }
 
 /* Activities */
-
+  
 .activities{
     width: 1428px;
     height: 500px;
@@ -388,7 +375,7 @@ main{
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
-
+/* each column takes up 25% of the wrappers space */
 .activities-wrapper{
     margin-top: 20px;
     height: 400px;
